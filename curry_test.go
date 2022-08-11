@@ -8,8 +8,8 @@ import (
 )
 
 func TestCurry(t *testing.T) {
-	t.Run("curryone.TwoArgsOneRet", func(t *testing.T) {
-		f := curryone.TwoArgsOneRet(1, math.Min)
+	t.Run("curryone.FromTwoArgsOneRet", func(t *testing.T) {
+		f := curryone.FromTwoArgsOneRet(1, math.Min)
 		if v := f(0.0); v != 0.0 {
 			t.Fatalf("Expected float 0.0, got %f", v)
 		}

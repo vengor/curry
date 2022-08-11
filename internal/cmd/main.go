@@ -53,7 +53,7 @@ func main() {
 		data := Data{PackageName: "curry" + strings.ToLower(numbers[curried])}
 		for args := curried; args <= 5; args++ {
 			for rets := 0; rets <= 5; rets++ {
-				name := fmt.Sprintf("%sArg%s", numbers[args], plural(args))
+				name := fmt.Sprintf("From%sArg%s", numbers[args], plural(args))
 				variadicName := name + "Variadic"
 				if rets > 0 {
 					suffix := fmt.Sprintf("%sRet%s", numbers[rets], plural(rets))
