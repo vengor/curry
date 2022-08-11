@@ -24,3 +24,8 @@ jobs:
         with:
           files: |
             **/*.go
+      - name: Fail if files changed
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
+          exit 1
