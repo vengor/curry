@@ -1,4 +1,4 @@
-{{- /*gotype: github.com/vengor/curry/internal/cmd.Data*/ -}}
+{{- /*gotype: github.com/vengor/curry/internal/generate.Data*/ -}}
 package {{ .PackageName }}
 
 {{ range .Funcs }}
